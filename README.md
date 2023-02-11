@@ -1,7 +1,7 @@
 # Early bird + Parent Process Id Spoofing
 
 This technique is already well known but still powerfull.
-The main idea is to queue an user thread into a suspended process, avoiding the need to create a new thread. Since the process is launch in suspended state, EDR's haven't placed any hooks yet.
+The main idea is to queue an user APC into a suspended process, avoiding the need to create a new thread. Since the process is launch in suspended state, EDR's haven't placed any hooks yet.
 
 For the PPId spoofing, we just copy the attributes of another process. It can be detected if we take a look at the event log.
 
